@@ -109,42 +109,42 @@ class Employee:
                 #===========================================================================Labels and Entry Widget========================================================
                 self.lblEmpID =Label(DataFrameLEFT, font=('arial',20,'bold'), text="Employee ID:", padx=2,pady=2, bg="Ghost White")
                 self.lblEmpID.grid(row=0, column=0, sticky=W)
-                self.txtEmpID =Label(DataFrameLEFT, font=('arial',20,'bold'), textvariable=EmpID, width=39)
+                self.txtEmpID =Entry(DataFrameLEFT, font=('arial',20,'bold'), textvariable=EmpID, width=39)
                 self.txtEmpID.grid(row=0, column=1)
 	    
                 self.lblfna =Label(DataFrameLEFT, font=('arial',20,'bold'), text="Firstname:", padx=2,pady=2, bg="Ghost White")
                 self.lblfna.grid(row=1, column=0, sticky=W)
-                self.txtfna =Label(DataFrameLEFT ,font=('arial',20,'bold'),textvariable = Firstname, width=39)
+                self.txtfna =Entry(DataFrameLEFT ,font=('arial',20,'bold'),textvariable = Firstname, width=39)
                 self.txtfna.grid(row=1, column=1)
 
                 self.lblSna =Label(DataFrameLEFT, font=('arial',20,'bold'), text="Surname:", padx=2,pady=2, bg="Ghost White")
                 self.lblSna.grid(row=2, column=0, sticky=W)
-                self.txtSna =Label(DataFrameLEFT, font=('arial',20,'bold'), textvariable = Surname, width=39)
+                self.txtSna =Entry(DataFrameLEFT, font=('arial',20,'bold'), textvariable = Surname, width=39)
                 self.txtSna.grid(row=2, column=1)
 
                 self.lblDOB =Label(DataFrameLEFT, font=('arial',20,'bold'), text="Date of Birth:", padx=2,pady=3, bg="Ghost White")
                 self.lblDOB.grid(row=3, column=0, sticky=W)
-                self.txtDOB =Label(DataFrameLEFT, font=('arial',20,'bold'), textvariable = DOB, width=39)
+                self.txtDOB =Entry(DataFrameLEFT, font=('arial',20,'bold'), textvariable = DOB, width=39)
                 self.txtDOB.grid(row=3, column=1)
 
                 self.lblAge =Label(DataFrameLEFT ,font=('arial',20,'bold'),text="Age:", padx=2,pady=3,bg="Ghost White")
                 self.lblAge.grid(row=4, column=0, sticky=W)
-                self.txtAge =Label(DataFrameLEFT ,font=('arial',20,'bold'),textvariable = Age, width=39)
+                self.txtAge =Entry(DataFrameLEFT ,font=('arial',20,'bold'),textvariable = Age, width=39)
                 self.txtAge.grid(row=4, column=1)
         
                 self.lblGender =Label(DataFrameLEFT ,font=('arial',20,'bold'),text="Gender:", padx=2,pady=3,bg="Ghost White")
                 self.lblGender.grid(row=5, column=0, sticky=W)
-                self.txtGender =Label(DataFrameLEFT ,font=('arial',20,'bold'),textvariable = Gender, width=39)
+                self.txtGender =Entry(DataFrameLEFT ,font=('arial',20,'bold'),textvariable = Gender, width=39)
                 self.txtGender.grid(row=5, column=1)
 	
                 self.lblAdr = Label(DataFrameLEFT ,font=('arial',20,'bold'),text="Address:", padx=2,pady=3,bg="Ghost White")
                 self.lblAdr.grid(row=6, column=0, sticky=W)
-                self.txtAdr =Label(DataFrameLEFT ,font=('arial',20,'bold'),textvariable = Address, width=39)
+                self.txtAdr =Entry(DataFrameLEFT ,font=('arial',20,'bold'),textvariable = Address, width=39)
                 self.txtAdr.grid(row=6, column=1)
 
                 self.lblMobile =Label(DataFrameLEFT, font=('arial',20,'bold'),text="Mobile:", padx=2,pady=3, bg="Ghost White")
                 self.lblMobile.grid(row=7, column=0, sticky=W)
-                self.txtMobile =Label(DataFrameLEFT, font=('arial',20,'bold'), textvariable = Mobile, width=39)
+                self.txtMobile =Entry(DataFrameLEFT, font=('arial',20,'bold'), textvariable = Mobile, width=39)
                 self.txtMobile.grid(row=7, column=1)
                 #===========================================================================ListBox & ScrollBar Widget========================================================
                 scrollbar = Scrollbar(DataFrameRIGHT)
