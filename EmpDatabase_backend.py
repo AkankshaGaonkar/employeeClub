@@ -11,7 +11,7 @@ def employeeData():
 def addEmpRec(EmpID, Firstname, Surname, DOB , Age , Gender , Address , Mobile):
     con=sqlite3.connect("employee.db")
     cur =con.cursor()
-    cur.execute("INSERT INTO employee VALUES (NULL, ?,?,?,?,?,?,?,?)",EmpID , Firstname , Surname , DOB , Age , Gender , Address , Mobile)
+    cur.execute("INSERT INTO employee VALUES (NULL, ?,?,?,?,?,?,?,?)",(EmpID , Firstname , Surname , DOB , Age , Gender , Address , Mobile))
     con.commit()
     con.close()
 
