@@ -154,6 +154,7 @@ class Employee:
                 employeelist.bind('<<ListboxSelect>>', EmployeeRec)
                 employeelist.grid(row=0, column=0, padx=8)
                 scrollbar.config(command = employeelist.yview)
+		DisplayData()
                 #===========================================================================Button Widget========================================================
                 self.btnaddData = Button(ButtonFrame, text="Add New", font=('arial',20,'bold'),width=10, height=1, bd=4, command=addData)
                 self.btnaddData.grid(row=0, column=0)
